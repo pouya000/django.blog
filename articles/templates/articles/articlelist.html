@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>articles</title>
     <link rel="stylesheet" href="static/styles.css">
-</head>
-<body>
+  </head>
+  <body>
+<div class= "container">
     <h1>articles list</h1>
     {% for a in artic %}
     <h2><a href=" ">{{ a.title }}</a></h2>
     <p>{{ a.snippet }}</p>
     {% endfor %}
-
-</body>
+</div>
+  </body>
 </html>
